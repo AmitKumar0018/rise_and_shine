@@ -6,16 +6,16 @@ import { ArrowUpRight } from "lucide-react";
 
 const facilities = [
   {
-    title: "Sensory Room",
+    title: "Learning Space",
     description:
-      "A calming space designed for sensory exploration and development.",
-    image: "/facilities/sensory.jpg",
+      "A comfortable environment for focused learning and development.",
+    image: "/facilities/learningArea.webp",
     className: "lg:col-span-7 lg:row-span-1",
   },
   {
     title: "Play Area",
     description: "A joyful environment where children learn through play.",
-    image: "/facilities/play-area.jpg",
+    image: "/facilities/playArea.webp",
     className: "lg:col-span-3 lg:row-span-1",
   },
   {
@@ -26,17 +26,20 @@ const facilities = [
     className: "lg:col-span-7 lg:row-span-1",
   },
   {
-    title: "Learning Space",
+    title: "Sensory Room",
     description:
-      "A comfortable environment for focused learning and development.",
-    image: "/facilities/learning-space.jpg",
+      "A calming space designed for sensory exploration and development.",
+    image: "/facilities/sensoryArea.webp",
     className: "lg:col-span-3 lg:row-span-1",
   },
 ];
 
 export default function Facilities() {
   return (
-    <section id="facilities" className="relative overflow-hidden bg-[#F7F9FF] px-6 py-8 md:px-10 lg:py-15">
+    <section
+      id="facilities"
+      className="relative overflow-hidden bg-[#F7F9FF] px-6 py-8 md:px-10 lg:py-15"
+    >
       {/* Soft decorative glow */}
       <div className="absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#DCCFFF]/30 blur-3xl" />
 

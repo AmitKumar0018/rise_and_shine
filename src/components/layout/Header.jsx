@@ -15,7 +15,7 @@ export default function Header() {
       <header className="sticky top-0 z-50 flex items-center justify-between bg-[var(--color-nav-bg)] backdrop-blur-md px-4 py-2">
         {/* block for logo + brand name  */}
         <div className="flex items-center gap-2 cursor-pointer">
-          <div className="relative h-10 w-10">
+          <div className="relative h-12 w-12">
             <Image
               src={logo}
               alt="logo-image"
@@ -23,9 +23,13 @@ export default function Header() {
               className="object-cover rounded-full"
             />
           </div>
-          <div>
-            <span className="text-[20px] font-bold text-[#063B4C]">
+          <div className="flex flex-col leading-none">
+            <span className="font-[var(--font-fredoka)] text-[22px] font-bold tracking-tight text-[#063B4C]">
               Early Tune
+            </span>
+
+            <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#0B7895]">
+              Child Development Centre
             </span>
           </div>
         </div>
@@ -34,13 +38,13 @@ export default function Header() {
 
         <button
           onClick={() => setVisible(true)}
-          className="rounded-lg p-2 md:hidden"
+          className="rounded-lg p-2 lg:hidden"
         >
           <Menu size={28} className="text-[#063B4C]" />
         </button>
 
         {/* block for all nav links  */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <ul className="flex items-center gap-7 cursor-pointer">
             <Link
               href="#home"
@@ -76,7 +80,7 @@ export default function Header() {
         </div>
 
         {/* block for Button  */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden lg:flex items-center">
           <Link
             href="#contact"
             className="rounded-full bg-[#0B7895] px-5 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-[#096A82] cursor-pointer"
@@ -86,7 +90,7 @@ export default function Header() {
         </div>
       </header>
       <div
-        className={`fixed inset-0 z-[100] bg-white transition-transform duration-300 md:hidden ${
+        className={`fixed inset-0 z-[100] bg-white transition-transform duration-300 lg:hidden ${
           visible ? "translate-x-0" : "translate-x-full"
         }`}
       >

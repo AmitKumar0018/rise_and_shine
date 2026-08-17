@@ -19,7 +19,7 @@ const location = {
 
   hours: [
     ["Mon - Fri", "9:30 AM - 6:30 PM"],
-    ["Saturday", "9:30 AM - 1:00 PM"],
+    ["Saturday", "9:30 AM - 1:30 PM"],
     ["Sunday", "Closed"],
   ],
 
@@ -126,6 +126,10 @@ export default function Locations() {
               <h3 className="font-[var(--font-fredoka)] text-3xl font-semibold leading-tight text-[#075A78] md:text-4xl">
                 Early Tune
               </h3>
+
+              <p className="mt-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0B7895]">
+                Child Development Centre
+              </p>
 
               <p className="mt-4 text-[15px] leading-6 text-[#5B7480]">
                 A thoughtfully designed space dedicated to supporting children

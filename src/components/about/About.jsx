@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import aboutImg from "../../../public/images/about.webp";
+import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -32,7 +33,7 @@ export default function About() {
           <h2 className="font-[var(--font-fredoka)] text-4xl font-semibold leading-tight text-[#075A78] md:text-5xl lg:text-6xl">
             Helping Little Minds
             <br />
-            <span className="text-[#16804B]">Grow & Shine</span>
+            <span className="text-[#16804B]">Grow & Achieve</span>
           </h2>
 
           <p className="mt-5 text-[16px] leading-7 text-[#315667]">
@@ -81,7 +82,9 @@ export default function About() {
                 Every child
               </p>
 
-              <p className="text-sm text-[#315667]">deserves to shine ✨</p>
+              <p className="text-sm text-[#315667]">
+                deserves to be independent ✨
+              </p>
             </motion.div>
           </motion.div>
 
@@ -207,8 +210,8 @@ export default function About() {
               </motion.div>
             </motion.div>
 
-            {/* Button */}
-            <motion.button
+            {/* Social Media */}
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -216,17 +219,47 @@ export default function About() {
                 duration: 0.6,
                 delay: 0.4,
               }}
-              whileHover={{
-                y: -4,
-                scale: 1.02,
-              }}
-              whileTap={{
-                scale: 0.97,
-              }}
-              className="mt-9 rounded-full bg-[#0B7895] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(11,120,149,0.2)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#096A82]"
+              className="mt-9"
             >
-              Discover Our Story →
-            </motion.button>
+              <p className="mb-4 text-sm font-semibold text-[#075A78]">
+                Follow Our Journey
+              </p>
+
+              <div className="flex items-center gap-3">
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/early_tune_?igsh=MXV0Z3g1MHEwczdybw%3D%3D&igsi=MXV0Z3g1MHEwczdybw%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow Early Tune on Instagram"
+                  className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#FFF0F5] text-[#D9467A] transition-all duration-300 hover:-translate-y-1 hover:bg-[#D9467A] hover:text-white hover:shadow-lg"
+                >
+                  <FaInstagram size={20} />
+                </a>
+
+                {/* Facebook */}
+                <a
+                  href="https://www.facebook.com/share/1DYPdZXZ3n/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow Early Tune on Facebook"
+                  className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#EAF2FF] text-[#1877F2] transition-all duration-300 hover:-translate-y-1 hover:bg-[#1877F2] hover:text-white hover:shadow-lg"
+                >
+                  <FaFacebookF size={20} />
+                </a>
+
+                {/* YouTube */}
+                <a
+                  href="https://youtube.com/@earlytunecdc?si=qmn1saJh9CES9fBc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow Early Tune on YouTube"
+                  className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#FFF0F0] text-[#FF0000] transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF0000] hover:text-white hover:shadow-lg"
+                >
+                  <FaYoutube size={20} />
+                </a>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>

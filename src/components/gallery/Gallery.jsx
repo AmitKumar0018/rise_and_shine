@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "/gallery/gallery-1.webp",
+    src: "/gallery/gallery-one.webp",
     title: "A place to explore",
     category: "Our Centre",
   },
@@ -26,7 +26,7 @@ const galleryImages = [
     category: "Activities",
   },
   {
-    src: "/gallery/gallery-4.webp",
+    src: "/gallery/gallery-four.webp",
     title: "Every step matters",
     category: "Therapy",
   },
@@ -41,7 +41,7 @@ const galleryImages = [
     category: "Our Centre",
   },
   {
-    src: "/gallery/gallery-8.webp",
+    src: "/gallery/gallery-eight.webp",
     title: "Happy minds",
     category: "Our Centre",
   },
