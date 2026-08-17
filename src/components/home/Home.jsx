@@ -5,9 +5,37 @@ import { BalloonIcon } from "lucide-react";
 import Balloon from "../shared/Ballons";
 import Cloud from "../decorations/Cloud";
 import Star from "../decorations/Star";
-import { HeartHandshake, HandHeart, Sprout, Trophy } from "lucide-react";
+import {
+  HeartHandshake,
+  HandHeart,
+  Sprout,
+  Trophy,
+  CalendarCheck,
+} from "lucide-react";
 
 export default function Home() {
+  const colorfulText = (text) => {
+    const colors = [
+      "#E66B7A",
+      "#7355C7",
+      "#16804B",
+      "#C98516",
+      "#0B7895",
+      "#E66B7A",
+    ];
+
+    return text.split("").map((letter, index) => (
+      <span
+        key={index}
+        style={{
+          color: colors[index % colors.length],
+        }}
+      >
+        {letter}
+      </span>
+    ));
+  };
+
   const values = [
     {
       icon: HeartHandshake,
@@ -98,11 +126,11 @@ export default function Home() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="max-w-5xl font-[var(--font-fredoka)] text-5xl font-semibold leading-[1.02] tracking-[-1.5px] text-[#075A78] md:text-6xl lg:text-7xl mt-10"
+          className="max-w-5xl font-[var(--font-fredoka)] text-5xl font-semibold leading-[1.02] tracking-[-1.5px] md:text-6xl lg:text-7xl mt-10"
         >
-          Tune In To Everyday Learning
+          {colorfulText("Tune In To Everyday Learning")}
           <br />
-          <span className="text-[#16804B]">For a Brighter Beginning</span>
+          {colorfulText("For a Brighter Beginning")}
         </motion.h1>
 
         <motion.p
@@ -146,7 +174,8 @@ export default function Home() {
           })}
         </motion.div>
 
-        <motion.button
+        <motion.a
+          href="tel:+917989087357"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -161,10 +190,11 @@ export default function Home() {
           whileTap={{
             scale: 0.97,
           }}
-          className="mt-8 rounded-full bg-[#0B7895] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(11,120,149,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#096A82]"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0B7895] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(11,120,149,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#096A82]"
         >
-          Start the Journey
-        </motion.button>
+          <CalendarCheck size={18} strokeWidth={2} />
+          Schedule an Appointment
+        </motion.a>
       </div>
 
       {/* Layered landscape */}
