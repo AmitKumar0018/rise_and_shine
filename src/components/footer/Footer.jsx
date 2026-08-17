@@ -1,4 +1,9 @@
-import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaYoutube,
+  FaEnvelope,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -75,6 +80,16 @@ export default function Footer() {
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-[#FFF0F0] text-[#FF0000] transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF0000] hover:text-white"
               >
                 <FaYoutube size={18} />
+              </a>
+              {/* Email */}
+              <a
+                href="mailto:earlytunecdc26@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email Early Tune"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-[#FFF4E8] text-[#D44638] transition-all duration-300 hover:-translate-y-1 hover:bg-[#D44638] hover:text-white"
+              >
+                <FaEnvelope size={16} />
               </a>
             </div>
           </div>

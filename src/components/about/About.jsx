@@ -3,7 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import aboutImg from "../../../public/images/about.webp";
-import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaYoutube,
+  FaEnvelope,
+} from "react-icons/fa";
 
 export default function About() {
   return (
@@ -257,6 +262,14 @@ export default function About() {
                   className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#FFF0F0] text-[#FF0000] transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF0000] hover:text-white hover:shadow-lg"
                 >
                   <FaYoutube size={20} />
+                </a>
+                {/* Email */}
+                <a
+                  href="mailto:earlytunecdc26@gmail.com"
+                  aria-label="Email Early Tune"
+                  className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#FFF4E8] text-[#C85A00] transition-all duration-300 hover:-translate-y-1 hover:bg-[#C85A00] hover:text-white hover:shadow-lg"
+                >
+                  <FaEnvelope size={19} />
                 </a>
               </div>
             </motion.div>

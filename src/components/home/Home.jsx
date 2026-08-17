@@ -16,12 +16,12 @@ import {
 export default function Home() {
   const colorfulText = (text) => {
     const colors = [
-      "#E66B7A",
-      "#7355C7",
-      "#16804B",
-      "#C98516",
-      "#0B7895",
-      "#E66B7A",
+      "#C94F5F",
+      "#5B3FA8",
+      "#087A4B",
+      "#B87508",
+      "#086B87",
+      "#C94F5F",
     ];
 
     return text.split("").map((letter, index) => (
@@ -29,6 +29,7 @@ export default function Home() {
         key={index}
         style={{
           color: colors[index % colors.length],
+          textShadow: "0 2px 8px rgba(7, 90, 120, 0.08)",
         }}
       >
         {letter}

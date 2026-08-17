@@ -25,18 +25,18 @@ export default function Header() {
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-[var(--font-fredoka)] text-[22px] font-bold tracking-tight">
-              <span className="text-[#E66B7A]">E</span>
-              <span className="text-[#0B7895]">a</span>
-              <span className="text-[#7355C7]">r</span>
-              <span className="text-[#16804B]">l</span>
-              <span className="text-[#C98516]">y</span>{" "}
-              <span className="text-[#0B7895]">T</span>
-              <span className="text-[#E66B7A]">u</span>
-              <span className="text-[#16804B]">n</span>
-              <span className="text-[#7355C7]">e</span>
+              <span className="text-[#C94F5F]">E</span>
+              <span className="text-[#086B87]">a</span>
+              <span className="text-[#5B3FA8]">r</span>
+              <span className="text-[#087A4B]">l</span>
+              <span className="text-[#B87508]">y</span>{" "}
+              <span className="text-[#086B87]">T</span>
+              <span className="text-[#C94F5F]">u</span>
+              <span className="text-[#087A4B]">n</span>
+              <span className="text-[#5B3FA8]">e</span>
             </span>
 
-            <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#0B7895]">
+            <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#086B87]">
               Child Development Centre
             </span>
           </div>
