@@ -119,23 +119,29 @@ export default function Services() {
                 key={service.number}
                 initial={{
                   opacity: 0,
-                  x: -70,
+                  x: -35,
+                  scale: 0.98,
                 }}
                 whileInView={{
                   opacity: 1,
                   x: 0,
+                  scale: 1,
                 }}
                 viewport={{
                   once: true,
-                  amount: 0.15,
+                  amount: 0.1,
                 }}
                 transition={{
-                  duration: 0.7,
-                  delay: index * 0.25,
-                  ease: [0.22, 1, 0.36, 1],
+                  duration: 0.65,
+                  delay: index * 0.08,
+                  ease: [0.16, 1, 0.3, 1],
                 }}
                 whileHover={{
                   y: -8,
+                  transition: {
+                    duration: 0.3,
+                    ease: "easeOut",
+                  },
                 }}
                 className="group relative min-h-[360px] overflow-hidden rounded-[2rem] border border-[#E4EEF0] bg-white p-7 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_70px_rgba(30,80,100,0.12)]"
               >
