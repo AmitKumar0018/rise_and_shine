@@ -175,20 +175,20 @@ export default function Home() {
         </motion.div>
       </div>
 
-      {/* Back layer */}
-      <div className="absolute -bottom-16 left-0 h-48 w-full rounded-[50%_50%_0_0] bg-[#B8C9DC]" />
+     {/* Back layer */}
+<div className="absolute -bottom-16 left-0 h-48 w-full rounded-[50%_50%_0_0] bg-[#BFDBFE]" />
 
-      {/* Layer 2 */}
-      <div className="absolute -bottom-24 left-[-8%] h-52 w-[116%] rounded-[50%_50%_0_0] bg-[#718EAD]" />
+{/* Layer 2 */}
+<div className="absolute -bottom-24 left-[-8%] h-52 w-[116%] rounded-[50%_50%_0_0] bg-[#93C5FD]" />
 
-      {/* Layer 3 */}
-      <div className="absolute -bottom-32 left-[5%] h-52 w-[100%] rounded-[50%_50%_0_0] bg-[#456A8D]" />
+{/* Layer 3 */}
+<div className="absolute -bottom-32 left-[5%] h-52 w-[100%] rounded-[50%_50%_0_0] bg-[#60A5FA]" />
 
-      {/* Layer 4 */}
-      <div className="absolute -bottom-40 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#274F73]" />
+{/* Layer 4 */}
+<div className="absolute -bottom-40 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#3B82F6]" />
 
-      {/* Front layer */}
-      <div className="absolute -bottom-48 left-[28%] h-44 w-[75%] rounded-[50%_50%_0_0] bg-[#0D3557]" />
+{/* Front layer */}
+<div className="absolute -bottom-48 left-[28%] h-44 w-[75%] rounded-[50%_50%_0_0] bg-[#2563EB]" />
     </section>
   );
 }
