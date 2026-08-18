@@ -1,9 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BalloonIcon } from "lucide-react";
-import Balloon from "../shared/Ballons";
-import Cloud from "../decorations/Cloud";
 import Star from "../decorations/Star";
 import {
   HeartHandshake,
@@ -14,29 +11,6 @@ import {
 } from "lucide-react";
 
 export default function Home() {
-  const colorfulText = (text) => {
-    const colors = [
-      "#C94F5F",
-      "#5B3FA8",
-      "#087A4B",
-      "#B87508",
-      "#086B87",
-      "#C94F5F",
-    ];
-
-    return text.split("").map((letter, index) => (
-      <span
-        key={index}
-        style={{
-          color: colors[index % colors.length],
-          textShadow: "0 2px 8px rgba(7, 90, 120, 0.08)",
-        }}
-      >
-        {letter}
-      </span>
-    ));
-  };
-
   const values = [
     {
       icon: HeartHandshake,
@@ -62,21 +36,9 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="relative min-h-[720px] overflow-hidden bg-[linear-gradient(180deg,#78C6E8_0%,#AFC9F3_25%,#DCCFFF_48%,#F4D6CE_72%,#FFE3C7_100%)]"
+      className="relative min-h-[680px] sm:min-h-[720px] overflow-hidden bg-white"
     >
       {/* Background glow */}
-      {/* Clouds */}
-      <Cloud
-        className="cloud-float absolute left-[8%] top-[18%] w-24"
-        color="#FFFFFF"
-        opacity={0.45}
-      />
-
-      <Cloud
-        className="cloud-float absolute right-[10%] top-[25%] w-32"
-        color="#FFFFFF"
-        opacity={0.35}
-      />
 
       {/* Stars */}
       <Star
@@ -91,35 +53,8 @@ export default function Home() {
         opacity={0.45}
       />
 
-      {/* Balloons */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="balloon balloon-1">
-          <Balloon color="#FF8585" size={52} />
-        </div>
-
-        <div className="balloon balloon-2">
-          <Balloon color="#FFD45F" size={42} />
-        </div>
-
-        <div className="balloon balloon-3">
-          <Balloon color="#63C7E8" size={58} />
-        </div>
-
-        <div className="balloon balloon-4">
-          <Balloon color="#7ED6A5" size={48} />
-        </div>
-
-        <div className="balloon balloon-5">
-          <Balloon color="#B99AF5" size={52} />
-        </div>
-
-        <div className="balloon balloon-6">
-          <Balloon color="#FF9FC8" size={38} />
-        </div>
-      </div>
-
       {/* Hero content */}
-      <div className="relative z-10 flex min-h-[650px] flex-col items-center justify-center px-6 pb-32 text-center">
+      <div className=" relative z-10 flex min-h-[600px] flex-col items-center justify-center px-5 pb-28 text-center sm:min-h-[650px] sm:px-6 sm:pb-32">
         <motion.h1
           initial={{ opacity: 0, y: 35 }}
           animate={{ opacity: 1, y: 0 }}
@@ -127,11 +62,13 @@ export default function Home() {
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="max-w-5xl font-[var(--font-fredoka)] text-5xl font-semibold leading-[1.02] tracking-[-1.5px] md:text-6xl lg:text-7xl mt-10"
+          className="mt-8 max-w-5xl px-2 font-[var(--font-fredoka)] text-4xl font-semibold leading-[1.08]tracking-[-1px] sm:text-5xl md:text-6xl md:leading-[1.02] lg:mt-10 lg:text-7xl"
         >
-          {colorfulText("Tune In To Everyday Learning")}
-          <br />
-          {colorfulText("For a Brighter Beginning")}
+          <span className="text-[#D5165E]">Tune In</span>{" "}
+          <span className="text-[#0769C6]">To Everyday Learning For a</span> {' '}
+          <br className="hidden sm:block" />
+          <span className="text-[#ED6E10]">Brighter</span>{" "}
+          <span className="text-[#4C912B]">Beginning</span>
         </motion.h1>
 
         <motion.p
