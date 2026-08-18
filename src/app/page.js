@@ -1,5 +1,6 @@
 
 import About from "@/components/about/About";
+import EnquiryForm from "@/components/EnquiryForm";
 import Facilities from "@/components/facilities/Facilities";
 import Footer from "@/components/footer/Footer";
 import Gallery from "@/components/gallery/Gallery";
@@ -17,6 +18,7 @@ export default function App() {
   <Facilities/>
   <Gallery/>
   <Locations/>
+  <EnquiryForm/>
   <Footer/>
   </>;
 }
