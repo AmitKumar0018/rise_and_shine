@@ -112,38 +112,34 @@ export default function Services() {
         {/* Services Cards */}
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => {
-            const Icon = service.icon;
-
             return (
               <motion.article
                 key={service.number}
                 initial={{
                   opacity: 0,
-                  x: -35,
-                  scale: 0.98,
+                  x: index % 2 === 0 ? -45 : 45,
                 }}
                 whileInView={{
                   opacity: 1,
                   x: 0,
-                  scale: 1,
                 }}
                 viewport={{
                   once: true,
-                  amount: 0.1,
+                  amount: 0.15,
                 }}
                 transition={{
-                  duration: 0.65,
-                  delay: index * 0.08,
-                  ease: [0.16, 1, 0.3, 1],
+                  duration: 0.8,
+                  delay: index * 0.06,
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 whileHover={{
-                  y: -8,
+                  y: -6,
                   transition: {
                     duration: 0.3,
                     ease: "easeOut",
                   },
                 }}
-                className="group relative min-h-[360px] overflow-hidden rounded-[2rem] border border-[#E4EEF0] bg-white p-7 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_70px_rgba(30,80,100,0.12)]"
+                className="group relative min-h-[360px] overflow-hidden rounded-[2rem] border border-[#E4EEF0] bg-white p-7 transition-all duration-500  hover:shadow-[0_25px_70px_rgba(30,80,100,0.12)]"
               >
                 {/* Soft background glow */}
                 <div
@@ -165,7 +161,7 @@ export default function Services() {
                     alt={service.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                   />
                 </div>
 

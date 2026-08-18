@@ -99,6 +99,15 @@ export default function Header() {
           </Link>
         </div>
       </header>
+
+      {/* Premium Navbar Divider */}
+      <div className="relative h-[4px] w-full overflow-hidden">
+        <div className="absolute inset-x-0 top-0 h-px bg-[#DDECEF]" />
+
+       
+        <div className="absolute left-1/2 top-0 h-[3px] w-[25%] -translate-x-1/2 rounded-full bg-white/40 blur-[2px]" />
+      </div>
+
       <div
         className={`fixed inset-0 z-[100] bg-white transition-transform duration-300 lg:hidden ${
           visible ? "translate-x-0" : "translate-x-full"
