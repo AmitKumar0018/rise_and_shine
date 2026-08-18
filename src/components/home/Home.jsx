@@ -149,7 +149,7 @@ export default function Home() {
             whileTap={{
               scale: 0.97,
             }}
-            className="inline-flex items-center gap-2 rounded-full bg-[#0B7895] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(11,120,149,0.20)] transition-all duration-300 hover:bg-[#096A82]"
+            className="inline-flex items-center gap-2 rounded-full bg-[#173A8F] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(11,120,149,0.20)] transition-all duration-300 hover:bg-[#102E73]"
           >
             <CalendarCheck size={18} strokeWidth={2} />
             Schedule an Appointment
@@ -175,20 +175,8 @@ export default function Home() {
         </motion.div>
       </div>
 
-     {/* Back layer */}
-<div className="absolute -bottom-16 left-0 h-48 w-full rounded-[50%_50%_0_0] bg-[#BFDBFE]" />
-
-{/* Layer 2 */}
-<div className="absolute -bottom-24 left-[-8%] h-52 w-[116%] rounded-[50%_50%_0_0] bg-[#93C5FD]" />
-
-{/* Layer 3 */}
-<div className="absolute -bottom-32 left-[5%] h-52 w-[100%] rounded-[50%_50%_0_0] bg-[#60A5FA]" />
-
-{/* Layer 4 */}
-<div className="absolute -bottom-40 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#3B82F6]" />
-
-{/* Front layer */}
-<div className="absolute -bottom-48 left-[28%] h-44 w-[75%] rounded-[50%_50%_0_0] bg-[#2563EB]" />
+      {/* Deep Blue Wave */}
+      <div className="absolute -bottom-8 left-[-5%] h-48 w-[110%] rounded-[50%_50%_0_0] bg-[#173A8F]" />
     </section>
   );
 }

@@ -93,7 +93,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center">
           <Link
             href="#contact"
-            className="rounded-full bg-[#0B7895] px-5 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-[#096A82] cursor-pointer"
+            className="rounded-full bg-[#173A8F] px-5 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-[#102E73] cursor-pointer"
           >
             Contact Us
           </Link>
