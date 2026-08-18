@@ -77,15 +77,15 @@ export default function EnquiryForm() {
 
               <div className="flex flex-col leading-none">
                 <span className="font-[var(--font-fredoka)] text-2xl font-bold tracking-tight">
-                  <span className="text-[#E66B7A]">E</span>
-                  <span className="text-[#0B7895]">a</span>
-                  <span className="text-[#7355C7]">r</span>
-                  <span className="text-[#16804B]">l</span>
-                  <span className="text-[#C98516]">y</span>{" "}
-                  <span className="text-[#0B7895]">T</span>
-                  <span className="text-[#E66B7A]">u</span>
-                  <span className="text-[#16804B]">n</span>
-                  <span className="text-[#7355C7]">e</span>
+                  <span className="text-[#E11962]">E</span>
+                  <span className="text-[#F06916]">A</span>
+                  <span className="text-[#4D931F]">R</span>
+                  <span className="text-[#0366CA]">L</span>
+                  <span className="text-[#3B0764]">Y</span>{" "}
+                  <span className="text-[#032B5B]">T</span>
+                  <span className="text-[#E11962]">U</span>
+                  <span className="text-[#F06916]">N</span>
+                  <span className="text-[#4D931F]">E</span>
                 </span>
 
                 <span className="mt-1 text-[9px] font-semibold uppercase tracking-[0.18em] text-[#0B7895]">

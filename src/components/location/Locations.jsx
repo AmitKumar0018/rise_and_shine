@@ -123,9 +123,17 @@ export default function Locations() {
             {/* CONTENT */}
             <div className="flex flex-col justify-center p-8 md:p-10 lg:p-12">
               {/* Title */}
-              <h3 className="font-[var(--font-fredoka)] text-3xl font-semibold leading-tight text-[#075A78] md:text-4xl">
-                Early Tune
-              </h3>
+              <span className="font-[var(--font-fredoka)] text-2xl font-bold tracking-tight">
+                <span className="text-[#E11962]">E</span>
+                <span className="text-[#F06916]">A</span>
+                <span className="text-[#4D931F]">R</span>
+                <span className="text-[#0366CA]">L</span>
+                <span className="text-[#3B0764]">Y</span>{" "}
+                <span className="text-[#032B5B]">T</span>
+                <span className="text-[#E11962]">U</span>
+                <span className="text-[#F06916]">N</span>
+                <span className="text-[#4D931F]">E</span>
+              </span>
 
               <p className="mt-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#0B7895]">
                 Child Development Centre

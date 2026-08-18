@@ -16,7 +16,7 @@ export default function Header() {
         {/* block for logo + brand name  */}
         <div className="flex items-center gap-2 cursor-pointer">
           <div className="relative h-12 w-12">
-            <Link href={'#home'}>
+            <Link href={"#home"}>
               <Image
                 src={logo}
                 alt="logo-image"
@@ -27,15 +27,15 @@ export default function Header() {
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-[var(--font-fredoka)] text-[22px] font-bold tracking-tight">
-              <span className="text-[#C94F5F]">E</span>
-              <span className="text-[#086B87]">a</span>
-              <span className="text-[#5B3FA8]">r</span>
-              <span className="text-[#087A4B]">l</span>
-              <span className="text-[#B87508]">y</span>{" "}
-              <span className="text-[#086B87]">T</span>
-              <span className="text-[#C94F5F]">u</span>
-              <span className="text-[#087A4B]">n</span>
-              <span className="text-[#5B3FA8]">e</span>
+              <span className="text-[#E11962]">E</span>
+              <span className="text-[#F06916]">A</span>
+              <span className="text-[#4D931F]">R</span>
+              <span className="text-[#0366CA]">L</span>
+              <span className="text-[#3B0764]">Y</span>{" "}
+              <span className="text-[#032B5B]">T</span>
+              <span className="text-[#E11962]">U</span>
+              <span className="text-[#F06916]">N</span>
+              <span className="text-[#4D931F]">E</span>
             </span>
 
             <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#086B87]">

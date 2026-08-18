@@ -175,24 +175,20 @@ export default function Home() {
         </motion.div>
       </div>
 
-      {/* Layered landscape */}
-
-      {/* Layered premium landscape */}
-
       {/* Back layer */}
-      <div className="absolute -bottom-16 left-0 h-48 w-full rounded-[50%_50%_0_0] bg-[#B8D9C8]" />
+      <div className="absolute -bottom-16 left-0 h-48 w-full rounded-[50%_50%_0_0] bg-[#DCEFF5]" />
 
-      {/* Soft yellow layer */}
-      <div className="absolute -bottom-24 left-[-8%] h-52 w-[116%] rounded-[50%_50%_0_0] bg-[#F3D98B]" />
+      {/* Layer 2 */}
+      <div className="absolute -bottom-24 left-[-8%] h-52 w-[116%] rounded-[50%_50%_0_0] bg-[#B8DDE9]" />
 
-      {/* Warm peach layer */}
-      <div className="absolute -bottom-32 left-[5%] h-52 w-[100%] rounded-[50%_50%_0_0] bg-[#EFB486]" />
+      {/* Layer 3 */}
+      <div className="absolute -bottom-32 left-[5%] h-52 w-[100%] rounded-[50%_50%_0_0] bg-[#8FC9DC]" />
 
-      {/* Soft orange layer */}
-      <div className="absolute -bottom-40 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#E69A5B]" />
+      {/* Layer 4 */}
+      <div className="absolute -bottom-40 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#68B2CA]" />
 
-      {/* Front green layer */}
-      <div className="absolute -bottom-48 left-[28%] h-44 w-[75%] rounded-[50%_50%_0_0] bg-[#78B79C]" />
+      {/* Front layer */}
+      <div className="absolute -bottom-48 left-[28%] h-44 w-[75%] rounded-[50%_50%_0_0] bg-[#4698B5]" />
     </section>
   );
 }
