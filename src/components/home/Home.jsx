@@ -176,19 +176,19 @@ export default function Home() {
       </div>
 
       {/* Back layer */}
-      <div className="absolute -bottom-16 left-0 h-48 w-full rounded-[50%_50%_0_0] bg-[#DCEFF5]" />
+      <div className="absolute -bottom-16 left-0 h-48 w-full rounded-[50%_50%_0_0] bg-[#B8C9DC]" />
 
       {/* Layer 2 */}
-      <div className="absolute -bottom-24 left-[-8%] h-52 w-[116%] rounded-[50%_50%_0_0] bg-[#B8DDE9]" />
+      <div className="absolute -bottom-24 left-[-8%] h-52 w-[116%] rounded-[50%_50%_0_0] bg-[#718EAD]" />
 
       {/* Layer 3 */}
-      <div className="absolute -bottom-32 left-[5%] h-52 w-[100%] rounded-[50%_50%_0_0] bg-[#8FC9DC]" />
+      <div className="absolute -bottom-32 left-[5%] h-52 w-[100%] rounded-[50%_50%_0_0] bg-[#456A8D]" />
 
       {/* Layer 4 */}
-      <div className="absolute -bottom-40 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#68B2CA]" />
+      <div className="absolute -bottom-40 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#274F73]" />
 
       {/* Front layer */}
-      <div className="absolute -bottom-48 left-[28%] h-44 w-[75%] rounded-[50%_50%_0_0] bg-[#4698B5]" />
+      <div className="absolute -bottom-48 left-[28%] h-44 w-[75%] rounded-[50%_50%_0_0] bg-[#0D3557]" />
     </section>
   );
 }
