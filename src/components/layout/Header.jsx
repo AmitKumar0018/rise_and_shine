@@ -12,16 +12,18 @@ export default function Header() {
   };
   return (
     <>
-      <header className="sticky top-0 z-50 flex items-center justify-between bg-[var(--color-nav-bg)] backdrop-blur-md px-4 py-2">
+      <header className="sticky top-0 z-50 flex items-center justify-between bg-[#F8FAFC] backdrop-blur-md px-4 py-2">
         {/* block for logo + brand name  */}
         <div className="flex items-center gap-2 cursor-pointer">
           <div className="relative h-12 w-12">
-            <Image
-              src={logo}
-              alt="logo-image"
-              fill
-              className="object-cover rounded-full"
-            />
+            <Link href={'#home'}>
+              <Image
+                src={logo}
+                alt="logo-image"
+                fill
+                className="object-cover rounded-full"
+              />
+            </Link>
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-[var(--font-fredoka)] text-[22px] font-bold tracking-tight">

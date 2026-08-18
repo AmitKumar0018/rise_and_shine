@@ -31,7 +31,7 @@ export default function Locations() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#F8FCFA] px-6 py-20 md:px-10 lg:py-28"
+      className="relative overflow-hidden bg-[#F8FCFA] px-6 py-8 md:px-10 lg:py-15"
     >
       {/* Background decoration */}
       <div className="absolute -left-40 top-20 h-80 w-80 rounded-full bg-[#DCCFFF]/30 blur-3xl" />

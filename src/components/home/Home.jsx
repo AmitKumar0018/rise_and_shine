@@ -8,6 +8,7 @@ import {
   Sprout,
   Trophy,
   CalendarCheck,
+  MapPin
 } from "lucide-react";
 
 export default function Home() {
@@ -36,21 +37,21 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="relative min-h-[680px] sm:min-h-[720px] overflow-hidden bg-white"
+      className="relative min-h-[680px] sm:min-h-[720px] overflow-hidden bg-[#F8FAF7]"
     >
       {/* Background glow */}
 
       {/* Stars */}
       <Star
-        className="absolute left-[18%] top-[32%] w-4"
-        color="#FFFFFF"
-        opacity={0.5}
+        className="absolute left-[8%] top-[40%] w-5 md:left-[15%] lg:left-[20%]"
+        color="#C98516"
+        opacity={0.8}
       />
 
       <Star
-        className="absolute right-[20%] top-[38%] w-5"
-        color="#FFFFFF"
-        opacity={0.45}
+        className="absolute right-[8%] top-[40%] w-5 md:right-[15%] lg:right-[20%]"
+        color="#E66B7A"
+        opacity={0.8}
       />
 
       {/* Hero content */}
@@ -65,7 +66,7 @@ export default function Home() {
           className="mt-8 max-w-5xl px-2 font-[var(--font-fredoka)] text-4xl font-semibold leading-[1.08]tracking-[-1px] sm:text-5xl md:text-6xl md:leading-[1.02] lg:mt-10 lg:text-7xl"
         >
           <span className="text-[#D5165E]">Tune In</span>{" "}
-          <span className="text-[#0769C6]">To Everyday Learning For a</span> {' '}
+          <span className="text-[#0769C6]">To Everyday Learning For a</span>{" "}
           <br className="hidden sm:block" />
           <span className="text-[#ED6E10]">Brighter</span>{" "}
           <span className="text-[#4C912B]">Beginning</span>
@@ -98,22 +99,37 @@ export default function Home() {
             const Icon = item.icon;
 
             return (
-              <div
+              <motion.div
                 key={item.text}
-                className="flex items-center gap-2 rounded-full border border-white/50 bg-white/30 px-4 py-2 backdrop-blur-sm"
+                whileHover={{
+                  y: -3,
+                  scale: 1.03,
+                }}
+                transition={{ duration: 0.2 }}
+                className="flex items-center gap-2 rounded-full border border-[#DDECEF] bg-white px-5 py-2.5 shadow-[0_6px_20px_rgba(7,90,120,0.08)]"
               >
-                <Icon size={18} strokeWidth={2} style={{ color: item.color }} />
+                <span
+                  className="flex h-7 w-7 items-center justify-center rounded-full"
+                  style={{
+                    backgroundColor: `${item.color}18`,
+                  }}
+                >
+                  <Icon
+                    size={16}
+                    strokeWidth={2.2}
+                    style={{ color: item.color }}
+                  />
+                </span>
 
                 <span className="text-sm font-semibold text-[#315667]">
                   {item.text}
                 </span>
-              </div>
+              </motion.div>
             );
           })}
         </motion.div>
 
-        <motion.a
-          href="tel:+917989087357"
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -121,18 +137,42 @@ export default function Home() {
             delay: 0.4,
             ease: "easeOut",
           }}
-          whileHover={{
-            y: -4,
-            scale: 1.03,
-          }}
-          whileTap={{
-            scale: 0.97,
-          }}
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#0B7895] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(11,120,149,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#096A82]"
+          className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row"
         >
-          <CalendarCheck size={18} strokeWidth={2} />
-          Schedule an Appointment
-        </motion.a>
+          {/* Appointment */}
+          <motion.a
+            href="tel:+917989087357"
+            whileHover={{
+              y: -4,
+              scale: 1.03,
+            }}
+            whileTap={{
+              scale: 0.97,
+            }}
+            className="inline-flex items-center gap-2 rounded-full bg-[#0B7895] px-7 py-3.5 text-[15px] font-semibold text-white shadow-[0_10px_30px_rgba(11,120,149,0.20)] transition-all duration-300 hover:bg-[#096A82]"
+          >
+            <CalendarCheck size={18} strokeWidth={2} />
+            Schedule an Appointment
+          </motion.a>
+
+          {/* Location */}
+          <motion.a
+            href="https://share.google/cz5VySnlEkhUH1eme"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{
+              y: -4,
+              scale: 1.03,
+            }}
+            whileTap={{
+              scale: 0.97,
+            }}
+            className="inline-flex items-center gap-2 rounded-full border border-[#D5E4E7] bg-white/80 px-7 py-3.5 text-[15px] font-semibold text-[#075A78] shadow-[0_8px_25px_rgba(7,90,120,0.08)] backdrop-blur-sm transition-all duration-300 hover:border-[#0B7895] hover:bg-white"
+          >
+            <MapPin size={18} strokeWidth={2} className="text-[#E66B7A]" />
+            Visit Us
+          </motion.a>
+        </motion.div>
       </div>
 
       {/* Layered landscape */}

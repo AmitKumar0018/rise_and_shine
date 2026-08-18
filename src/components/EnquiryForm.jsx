@@ -53,7 +53,7 @@ export default function EnquiryForm() {
   };
 
   return (
-    <section className="bg-[#FFFDF7] px-6 py-20 md:px-10 lg:py-28">
+    <section className="bg-[#FFFDF7] px-6 py-8 md:px-10 lg:py-15">
       <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-white shadow-[0_20px_70px_rgba(30,80,100,0.10)] lg:grid lg:grid-cols-[0.85fr_1.15fr]">
         {/* ================= LEFT SIDE ================= */}
         <div className="relative flex min-h-[520px] flex-col justify-between overflow-hidden bg-[#EAF7F5] p-8 md:p-12 lg:p-14">
