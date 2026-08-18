@@ -110,38 +110,28 @@ export default function Services() {
         </motion.div>
 
         {/* Services Cards */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          variants={{
-            hidden: {},
-            visible: {
-              transition: {
-                staggerChildren: 0.12,
-              },
-            },
-          }}
-          className="grid gap-5 md:grid-cols-2 lg:grid-cols-3"
-        >
-          {services.map((service) => {
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => {
             const Icon = service.icon;
 
             return (
               <motion.article
                 key={service.number}
-                variants={{
-                  hidden: {
-                    opacity: 0,
-                    y: 40,
-                  },
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                  },
+                initial={{
+                  opacity: 0,
+                  x: -70,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.15,
                 }}
                 transition={{
-                  duration: 0.65,
+                  duration: 0.7,
+                  delay: index * 0.25,
                   ease: [0.22, 1, 0.36, 1],
                 }}
                 whileHover={{
@@ -157,15 +147,9 @@ export default function Services() {
 
                 {/* Top row */}
                 <div className="relative flex items-center justify-between">
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                    className="text-sm font-semibold tracking-widest text-[#9AAFB7]"
-                  >
+                  <span className="text-sm font-semibold tracking-widest text-[#9AAFB7]">
                     {service.number}
-                  </motion.span>
+                  </span>
                 </div>
 
                 {/* Icon */}
@@ -198,7 +182,7 @@ export default function Services() {
               </motion.article>
             );
           })}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

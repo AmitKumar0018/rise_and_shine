@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "../../../public/logo/logo.webp";
+import logo from "../../../public/logo/earlyTuneLogo.webp";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";

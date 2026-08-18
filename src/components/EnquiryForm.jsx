@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { MessageCircle, HeartHandshake } from "lucide-react";
-import logo from "../../public/logo/logo.webp";
+import logo from "../../public/logo/earlyTuneLogo.webp";
 
 export default function EnquiryForm() {
   const [formData, setFormData] = useState({

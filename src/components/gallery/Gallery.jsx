@@ -6,42 +6,42 @@ import { ArrowUpRight } from "lucide-react";
 
 const galleryImages = [
   {
-    src: "/gallery/gallery-one.webp",
+    src: "/gallery/gall-one.webp",
     title: "A place to explore",
     category: "Our Centre",
   },
   {
-    src: "/gallery/gallery-2.webp",
+    src: "/gallery/gall-2.webp",
     title: "Learning through play",
     category: "Activities",
   },
   {
-    src: "/gallery/gallery-3.webp",
+    src: "/gallery/gall-3.webp",
     title: "Growing together",
     category: "Therapy",
   },
   {
-    src: "/gallery/gallery-5.webp",
+    src: "/gallery/gall-5.webp",
     title: "Little moments",
     category: "Activities",
   },
   {
-    src: "/gallery/gallery-four.webp",
+    src: "/gallery/gall-4.webp",
     title: "Every step matters",
     category: "Therapy",
   },
   {
-    src: "/gallery/gallery-6.webp",
+    src: "/gallery/gall-6.webp",
     title: "Happy minds",
     category: "Our Centre",
   },
   {
-    src: "/gallery/gallery-7.webp",
+    src: "/gallery/gallery-seven.webp",
     title: "Happy minds",
     category: "Our Centre",
   },
   {
-    src: "/gallery/gallery-eight.webp",
+    src: "/gallery/gall-8.webp",
     title: "Happy minds",
     category: "Our Centre",
   },

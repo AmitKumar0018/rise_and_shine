@@ -34,6 +34,7 @@ export default function Home() {
       color: "#C98516",
     },
   ];
+
   return (
     <section
       id="home"
@@ -55,7 +56,7 @@ export default function Home() {
       />
 
       {/* Hero content */}
-      <div className=" relative z-10 flex min-h-[600px] flex-col items-center justify-center px-5 pb-28 text-center sm:min-h-[650px] sm:px-6 sm:pb-32">
+      <div className=" relative z-10 flex min-h-[600px] flex-col items-center justify-center px-5 pb-8 text-center sm:min-h-[650px] sm:px-6 sm:pb-15">
         <motion.h1
           initial={{ opacity: 0, y: 35 }}
           animate={{ opacity: 1, y: 0 }}
@@ -174,9 +175,22 @@ export default function Home() {
           </motion.a>
         </motion.div>
       </div>
+      {/* Premium Colorful Divider */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+        <div className="relative h-8 w-full">
+          {/* Pink */}
+          <div className="absolute -bottom-6 left-[-5%] h-12 w-[110%] rounded-[50%] bg-[#C94F5F]" />
 
-      {/* Deep Blue Wave */}
-      <div className="absolute -bottom-8 left-[-5%] h-48 w-[110%] rounded-[50%_50%_0_0] bg-[#173A8F]" />
+          {/* Gold */}
+          <div className="absolute -bottom-7 left-[-5%] h-12 w-[110%] rounded-[50%] bg-[#C98516]" />
+
+          {/* Green */}
+          <div className="absolute -bottom-8 left-[-5%] h-12 w-[110%] rounded-[50%] bg-[#087A4B]" />
+
+          {/* Blue */}
+          <div className="absolute -bottom-9 left-[-5%] h-12 w-[110%] rounded-[50%] bg-[#173A8F]" />
+        </div>
+      </div>
     </section>
   );
 }
