@@ -8,7 +8,7 @@ import {
   Sprout,
   Trophy,
   CalendarCheck,
-  MapPin
+  MapPin,
 } from "lucide-react";
 
 export default function Home() {
@@ -176,11 +176,23 @@ export default function Home() {
       </div>
 
       {/* Layered landscape */}
-      <div className="absolute -bottom-20 left-0 h-52 w-full rounded-[50%_50%_0_0] bg-[#B8D9C8]" />
 
-      <div className="absolute -bottom-32 left-[-10%] h-56 w-[120%] rounded-[50%_50%_0_0] bg-[#91C5AE]" />
+      {/* Layered premium landscape */}
 
-      <div className="absolute -bottom-44 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#78B79C]" />
+      {/* Back layer */}
+      <div className="absolute -bottom-16 left-0 h-48 w-full rounded-[50%_50%_0_0] bg-[#B8D9C8]" />
+
+      {/* Soft yellow layer */}
+      <div className="absolute -bottom-24 left-[-8%] h-52 w-[116%] rounded-[50%_50%_0_0] bg-[#F3D98B]" />
+
+      {/* Warm peach layer */}
+      <div className="absolute -bottom-32 left-[5%] h-52 w-[100%] rounded-[50%_50%_0_0] bg-[#EFB486]" />
+
+      {/* Soft orange layer */}
+      <div className="absolute -bottom-40 left-[15%] h-48 w-[90%] rounded-[50%_50%_0_0] bg-[#E69A5B]" />
+
+      {/* Front green layer */}
+      <div className="absolute -bottom-48 left-[28%] h-44 w-[75%] rounded-[50%_50%_0_0] bg-[#78B79C]" />
     </section>
   );
 }
