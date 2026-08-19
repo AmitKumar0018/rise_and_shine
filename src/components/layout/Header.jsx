@@ -15,7 +15,7 @@ export default function Header() {
       <header className="sticky top-0 z-50 flex items-center justify-between bg-[#F8FAFC] backdrop-blur-md px-4 py-2">
         {/* block for logo + brand name  */}
         <div className="flex items-center gap-2 cursor-pointer">
-          <div className="relative h-12 w-12">
+          <div className="relative h-14 w-14">
             <Link href={"#home"}>
               <Image
                 src={logo}

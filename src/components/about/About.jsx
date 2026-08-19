@@ -10,6 +10,8 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
+import {} from 'lucide-react'
+
 export default function About() {
   return (
     <section
