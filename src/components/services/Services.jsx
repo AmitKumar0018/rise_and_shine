@@ -117,7 +117,7 @@ export default function Services() {
                 key={service.number}
                 initial={{
                   opacity: 0,
-                  x: index % 2 === 0 ? -45 : 45,
+                  x: index % 2 === 0 ? -100 : 100,
                 }}
                 whileInView={{
                   opacity: 1,
@@ -125,21 +125,19 @@ export default function Services() {
                 }}
                 viewport={{
                   once: true,
-                  amount: 0.15,
+                  amount: 0,
                 }}
                 transition={{
-                  duration: 0.8,
-                  delay: index * 0.06,
+                  duration: 0.45,
                   ease: [0.22, 1, 0.36, 1],
                 }}
                 whileHover={{
                   y: -6,
                   transition: {
-                    duration: 0.3,
-                    ease: "easeOut",
+                    duration: 0.2,
                   },
                 }}
-                className="group relative min-h-[360px] overflow-hidden rounded-[2rem] border border-[#E4EEF0] bg-white p-7 transition-all duration-500  hover:shadow-[0_25px_70px_rgba(30,80,100,0.12)]"
+                className="group relative min-h-[360px] overflow-hidden rounded-[2rem] border border-[#E4EEF0] bg-white p-7 transition-all duration-500 hover:shadow-[0_25px_70px_rgba(30,80,100,0.12)]"
               >
                 {/* Soft background glow */}
                 <div
