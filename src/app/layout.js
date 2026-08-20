@@ -13,8 +13,21 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Early Tune - Child Development Centre",
-  description: "Child Development Centre And Rehabilitation.",
+  title: "Early Tune | Child Development Centre & Rehabilitation",
+  description:
+    "Early Tune is a Child Development Centre and Rehabilitation centre providing speech therapy, occupational therapy, physiotherapy, ABA therapy, special education and early intervention for children.",
+  metadataBase: new URL("https://www.earlytunecdc.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Early Tune | Child Development Centre & Rehabilitation",
+    description:
+      "Supporting children through therapy, early intervention, special education and rehabilitation services.",
+    url: "https://www.earlytunecdc.com",
+    siteName: "Early Tune",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
